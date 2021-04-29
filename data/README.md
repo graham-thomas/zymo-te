@@ -4,6 +4,10 @@ was downloaded from Ensembl on 2021-04-29 using;
 
     wget ftp.ensemblgenomes.org/pub/fungi/release-50/fasta/zymoseptoria_tritici/dna/
     # only the top level dna, not the masked versions rm, sm.
+    
+Gene annotation data (also Ensembl release 74) was downloaded from Ensembl on
+Sat Feb 22 23:30:27 PST 2014, using:
+
     wget ftp.ensemblgenomes.org/pub/fungi/release-50/gff3/zymoseptoria_tritici
 
-    
+## SHA-1 Sums
