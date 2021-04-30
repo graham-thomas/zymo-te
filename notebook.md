@@ -16,6 +16,9 @@
 Update perl script with path to binaries.
 - issue encountered; bin/ directory empty. Have emailed developer for assistance.
 
+Same as below, have discovered I can install recon through conda/mamba
+
+
 ## Download RepeatScout
 from https://github.com/mmcco/RepeatScout/blob/master/README
 Installation requirements;
@@ -26,11 +29,18 @@ Downloaded trf.v4.09 to ~/src/ from https://tandem.bu.edu/trf/trf.download.html 
      from http://repeatscout.bioprojects.org however the web address no longer exists*
 
 ## RepeatScout - Work around
-RepeatScout is a bioconda package
+RepeatScout is available as a bioconda package
     conda install -c bioconda repeatscout
     conda create --name=repeatscout repeatscout
     conda activate repeatscout
 installed dependencies so  removed nseg and trf from ~/src/
+
+Found good implementation guide at https://openwetware.org/wiki/Wikiomics:Repeat_finding
+run
+    cd /zymo-te/analysis/
+    conda activate repeatscout
+    build_lmer_table -sequence ../data/seqs/zymoseptoria_tritici/Zymoseptoria_tritici.MG2.dna.toplevel.fa -freq output_lmer.frequency
+    RepeatScout -sequence ../data/seqs/zymoseptoria_tritici/Zymoseptoria_tritici.MG2.dna.toplevel.fa -output output_repeats.fas  -freq output_lmer.frequency
 
 ## Download RepeatMasker
 https://www.repeatmasker.org/RepeatMasker/
