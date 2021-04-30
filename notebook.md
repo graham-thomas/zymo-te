@@ -30,13 +30,16 @@ Downloaded trf.v4.09 to ~/src/ from https://tandem.bu.edu/trf/trf.download.html 
 
 ## RepeatScout - Work around
 RepeatScout is available as a bioconda package
+    
     conda install -c bioconda repeatscout
     conda create --name=repeatscout repeatscout
     conda activate repeatscout
+
 installed dependencies so  removed nseg and trf from ~/src/
 
 Found good implementation guide at https://openwetware.org/wiki/Wikiomics:Repeat_finding
 run
+    
     cd /zymo-te/analysis/
     conda activate repeatscout
     build_lmer_table -sequence ../data/seqs/zymoseptoria_tritici/Zymoseptoria_tritici.MG2.dna.toplevel.fa -freq output_lmer.frequency
