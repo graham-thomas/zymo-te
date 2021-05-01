@@ -65,9 +65,13 @@ RepeatMasker uses a sequence search engine to perform it's search for repeats. C
 To update the Dfam libraries contained in this release go to http://www.dfam.org.
 
 Have requested license for phrap. Two week turn around.
+
 Downloaded hmmer.v3.3.2 to ~/src/ from http://hmmer.org/ on 2021-04-30
+
 Downloaded rmblast.v2.11.0 to ~/src/ from http://www.repeatmasker.org/RMBlast.html on 2021-04-30
+
 Tried downloading repbase however, requires subscription fee even for individual academics.
+
 - University of Exeter not registered.
 
 Downloaded RepeatMasker-4.1.2-p1 to ~/src/ from https://www.repeatmasker.org/RepeatMasker/ on 2021-04-30 
@@ -75,4 +79,5 @@ Downloaded RepeatMasker-4.1.2-p1 to ~/src/ from https://www.repeatmasker.org/Rep
 Have since learned conda/mamba package managers are better tools for the job
 
     mamba create --name=repeatmasker repeatmasker
+    
 therefore remove previously installed dependencies from ~/src/
