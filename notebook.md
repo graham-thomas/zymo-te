@@ -49,30 +49,27 @@ run
 https://www.repeatmasker.org/RepeatMasker/
 This webpage shows prerequisites;
 
-    - Unix system with perl 5.8.0 or higher installed
-    - Python 3 and the h5py python library.
-    - Sequence Search Engine
-    RepeatMasker uses a sequence search engine to perform it's search for repeats. Currently Cross_Match, RMBlast and WUBlast/ABBlast are supported. You will need to obtain one or the other of these and install them on your system.
+- Unix system with perl 5.8.0 or higher installed
+- Python 3 and the h5py python library.
+- Sequence Search Engine
+RepeatMasker uses a sequence search engine to perform it's search for repeats. Currently Cross_Match, RMBlast and WUBlast/ABBlast are supported. You will need to obtain one or the other of these and install them on your system.
 
-        - For Cross_Match go to http://www.phrap.org You will want to select "Phred/Phrap/Consed" as Cross_Match is part of the Phrap package.
-        - For RMBlast ( NCBI Blast modified for use with RepeatMasker/RepeatModeler ) please go to our download page: http://www.repeatmasker.org/RMBlast.html
-        - For HMMER please download the v3.2.1 version here: http://hmmer.org/
-        - For ABBlast/WUBlast go to [ NOTE: Rights to BLAST 2.0 (WU-BLAST) have been acquired by Advanced Biocomputing, LLC. http://blast.advbiocomp.com/licensing/ RepeatMasker 3.2.8 and above fully support both variants ]
+    - For Cross_Match go to http://www.phrap.org You will want to select "Phred/Phrap/Consed" as Cross_Match is part of the Phrap package.
+    - For RMBlast ( NCBI Blast modified for use with RepeatMasker/RepeatModeler ) please go to our download page: http://www.repeatmasker.org/RMBlast.html
+    - For HMMER please download the v3.2.1 version here: http://hmmer.org/
+    - For ABBlast/WUBlast go to [ NOTE: Rights to BLAST 2.0 (WU-BLAST) have been acquired by Advanced Biocomputing, LLC. http://blast.advbiocomp.com/licensing/ RepeatMasker 3.2.8 and above fully support both variants ]
 
-    - TRF - Tandem Repeat Finder, G. Benson et al.
-You can obtain a free copy at http://tandem.bu.edu/trf/trf.html. RepeatMasker was developed using TRF version 4.0.9
+- TRF - Tandem Repeat Finder, G. Benson et al. You can obtain a free copy at http://tandem.bu.edu/trf/trf.html. RepeatMasker was developed using TRF version 4.0.9
 
-    - Repeat Database
-RepeatMasker can be used with custom libraries, or with Dfam out of the box. Dfam is an open database of transposable element (TE) profile HMM models and consensus sequences. The current release (Dfam 3.2) contains 6,900 TE families spanning five organisms: human, mouse, zebrafish, fruit fly, nematode, and a growing number of additional species. To supplement this databases we recommend obtaining the RepeatMasker edition of RepBase.
+- Repeat Database. RepeatMasker can be used with custom libraries, or with Dfam out of the box. Dfam is an open database of transposable element (TE) profile HMM models and consensus sequences. The current release (Dfam 3.2) contains 6,900 TE families spanning five organisms: human, mouse, zebrafish, fruit fly, nematode, and a growing number of additional species. To supplement this databases we recommend obtaining the RepeatMasker edition of RepBase.
 To update the Dfam libraries contained in this release go to http://www.dfam.org.
 
 Have requested license for phrap. Two week turn around.
 Downloaded hmmer.v3.3.2 to ~/src/ from http://hmmer.org/ on 2021-04-30
 Downloaded rmblast.v2.11.0 to ~/src/ from http://www.repeatmasker.org/RMBlast.html on 2021-04-30
 Tried downloading repbase however, requires subscription fee even for individual academics.
+- University of Exeter not registered.
 
-    University of Exeter not registered.
-    
 Downloaded RepeatMasker-4.1.2-p1 to ~/src/ from https://www.repeatmasker.org/RepeatMasker/ on 2021-04-30 
 
 Have since learned conda/mamba package managers are better tools for the job
