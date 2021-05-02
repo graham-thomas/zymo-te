@@ -62,7 +62,6 @@ Output is used for the next step: input_genome_sequence.fas.out
 
 - filtering putative repeats by copy number. By default only sequences occurring > 10 times in the genome are kept
 
-    
     cat output_repeats.fas.filtered_1  | filter-stage-2.prl --cat=../data/seqs/zymoseptoria_tritici/Zymoseptoria_tritici.MG2.dna.toplevel.fa.out > output_repeats.fas.filtered_2
 
 That completes the RepeatMasker analysis. Now determine what to do with the output!
