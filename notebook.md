@@ -66,13 +66,11 @@ That completes the RepeatMasker analysis.
 
 Summary in file /data/seqs/zymoseptoria/Zymoseptoria_tritici.MG2.dna.toplevel.fa.tbl displayed below shows 18.53 % repetitive sequence in the *Z. tritici* genome, identical to what is displayed in Table 1 (last line) of the paper.
 
-==================================================
-file name: Zymoseptoria_tritici.MG2.dna.toplevel.fa
-sequences:            21
-total length:   39686251 bp  (39678910 bp excl N/X-runs)
-GC level:         52.14 %
-bases masked:    7355662 bp ( 18.53 %)
-==================================================
+    file name: Zymoseptoria_tritici.MG2.dna.toplevel.fa
+    sequences:            21
+    total length:   39686251 bp  (39678910 bp excl N/X-runs)
+    GC level:         52.14 %
+    bases masked:    7355662 bp ( 18.53 %)
 
 ## \* 2021-04-29 Failed first attempt downloading RepeatMasker
 https://www.repeatmasker.org/RepeatMasker/
