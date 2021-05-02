@@ -1,8 +1,0 @@
-name: recon
-channels:
-  - conda-forge
-  - bioconda
-  - defaults
-dependencies:
-  - recon=1.08=hb4d813b_3
-prefix: /Users/Gray/opt/anaconda3/envs/recon
