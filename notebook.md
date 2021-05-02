@@ -25,8 +25,8 @@ Installation requirements;
 already have perl-5.5 or better
 Downloaded nseg to ~/src/ from ftp://ftp.ncbi.nih.gov/pub/seg/nseg/ on 2021-04-30
 Downloaded trf.v4.09 to ~/src/ from https://tandem.bu.edu/trf/trf.download.html on 2021-04-30
-**states** *download the source code tarball RepeatScout-#.#.#.tar.gz 
-     from http://repeatscout.bioprojects.org however the web address no longer exists*
+**states -** download the source code tarball RepeatScout-#.#.#.tar.gz 
+from http://repeatscout.bioprojects.org however the web address no longer exists.
 
 ## RepeatScout - Work around
 RepeatScout is available as a bioconda package
@@ -45,7 +45,28 @@ run
     build_lmer_table -sequence ../data/seqs/zymoseptoria_tritici/Zymoseptoria_tritici.MG2.dna.toplevel.fa -freq output_lmer.frequency
     RepeatScout -sequence ../data/seqs/zymoseptoria_tritici/Zymoseptoria_tritici.MG2.dna.toplevel.fa -output output_repeats.fas  -freq output_lmer.frequency
 
-## Download RepeatMasker
+The output (output_repeats.fas) is a fasta file with headers (>R=1, >R=232 etc.). It contains also trivial simple repeats (CACACA...), tandem repeats
+
+- filter out short (<50bp) sequences. Remove "anything that is over 50% low-complexity vis a vis TRF or NSEG.". Perl script.
+
+It does require trg and nseg to be on the PATH, or setting env variables TRF_COMMAND and NSEG_COMMAND pointing to their location
+
+    filter-stage-1.prl output_repeats.fas > output_repeats.fas.filtered_1
+
+run RepeatMasker on your genome of interest using filtered RepeatScout library
+
+    RepeatMasker  ../data/seqs/zymoseptoria_tritici/Zymoseptoria_tritici.MG2.dna.toplevel.fa -lib output_repeats.fas.filtered_1
+
+Output is saved in same directory as genome. Total of 5 files with additional suffix's.
+Output is used for the next step: input_genome_sequence.fas.out
+
+- filtering putative repeats by copy number. By default only sequences occurring > 10 times in the genome are kept
+
+    cat output_repeats.fas.filtered_1  | filter-stage-2.prl --cat=../data/seqs/zymoseptoria_tritici/Zymoseptoria_tritici.MG2.dna.toplevel.fa.out > output_repeats.fas.filtered_2
+
+That completes the RepeatMasker analysis. Now determine what to do with the output!
+
+## \* 2021-04-29 Failed first attempt downloading RepeatMasker
 https://www.repeatmasker.org/RepeatMasker/
 This webpage shows prerequisites;
 
@@ -79,5 +100,7 @@ Downloaded RepeatMasker-4.1.2-p1 to ~/src/ from https://www.repeatmasker.org/Rep
 Have since learned conda/mamba package managers are better tools for the job
 
     mamba create --name=repeatmasker repeatmasker
-    
+
 therefore remove previously installed dependencies from ~/src/
+
+Load all modules into a single env for this project and apply project name zymo-te.
