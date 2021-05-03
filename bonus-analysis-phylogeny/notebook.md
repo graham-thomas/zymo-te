@@ -1,4 +1,4 @@
-# Using MUSCLE on ACE1 gene top 100 BLAST hits from NCBI
+# Producing a phlogenetic tree for ACE1 gene top 100 BLAST hits from NCBI
 
 http://www.drive5.com/muscle/manual/
 
