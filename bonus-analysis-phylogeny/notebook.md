@@ -33,5 +33,4 @@ View treefile in figtree.
 
     figtree seqdump.aligned.fa.treefile
 
-
-
+<img src="data/seqdump.aligned.fa.treefile.jpg">
