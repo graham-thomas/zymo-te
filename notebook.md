@@ -110,3 +110,4 @@ Have since learned conda/mamba package managers are better tools for the job
 therefore remove previously installed dependencies from ~/src/
 
 Load all modules into a single env for this project and apply project name zymo-te. yaml file saved in analysis/.
+- edit; rename yaml file as '_config.yaml' and move to main.
