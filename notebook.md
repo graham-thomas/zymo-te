@@ -23,8 +23,11 @@ Same as below, have discovered I can install recon through conda/mamba
 from https://github.com/mmcco/RepeatScout/blob/master/README
 Installation requirements;
 already have perl-5.5 or better
+
 Downloaded nseg to ~/src/ from ftp://ftp.ncbi.nih.gov/pub/seg/nseg/ on 2021-04-30
+
 Downloaded trf.v4.09 to ~/src/ from https://tandem.bu.edu/trf/trf.download.html on 2021-04-30
+
 **states -** download the source code tarball RepeatScout-#.#.#.tar.gz 
 from http://repeatscout.bioprojects.org however the web address no longer exists.
 
