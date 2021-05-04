@@ -28,10 +28,10 @@ Downloaded nseg to ~/src/ from ftp://ftp.ncbi.nih.gov/pub/seg/nseg/ on 2021-04-3
 
 Downloaded trf.v4.09 to ~/src/ from https://tandem.bu.edu/trf/trf.download.html on 2021-04-30
 
-**states -** download the source code tarball RepeatScout-#.#.#.tar.gz 
+**States -** download the source code tarball RepeatScout-#.#.#.tar.gz 
 from http://repeatscout.bioprojects.org however the web address no longer exists.
 
-## RepeatScout - Work around
+## RepeatScout - fix
 RepeatScout is available as a bioconda package
     
     conda install -c bioconda repeatscout
@@ -75,7 +75,7 @@ Summary in file /data/seqs/zymoseptoria/Zymoseptoria_tritici.MG2.dna.toplevel.fa
     GC level:         52.14 %
     bases masked:    7355662 bp ( 18.53 %)
 
-## \* 2021-04-29 Failed first attempt downloading RepeatMasker
+## \* 2021-04-29 First attempt downloading RepeatMasker
 https://www.repeatmasker.org/RepeatMasker/
 This webpage shows prerequisites;
 
