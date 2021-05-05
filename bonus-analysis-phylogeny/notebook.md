@@ -1,8 +1,8 @@
-# Producing an (unpolished) phlogenetic tree for ACE1 gene top 100 BLAST hits from NCBI
+# Producing a phlogenetic tree for *ACE1* gene and it's top 100 BLAST hits from NCBI
 
 http://www.drive5.com/muscle/manual/
 
-Searched ACE1 on NCBI, selected *H. sapien* and ran pblast.
+Searched *ACE1* on NCBI, selected *H. sapien* and ran pblast.
     
     conda install -c bioconda muscle
     conda update muscle
