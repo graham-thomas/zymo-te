@@ -1,4 +1,4 @@
-# Producing a phlogenetic tree for *ACE1* gene and it's top 100 BLAST hits from NCBI
+# Producing a phlogenetic tree for *H. sapien ACE1*
 
 http://www.drive5.com/muscle/manual/
 
